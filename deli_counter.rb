@@ -39,7 +39,7 @@ end
 
 def my_method 
   return 'potatoes'
-  'umbrella'
+  puts 'umbrella'
 end 
 
 binding.pry
