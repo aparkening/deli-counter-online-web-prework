@@ -9,12 +9,15 @@ katz_deli = [ ]
 # the first number is 617 
 # the current (starting) line should be [615, 616]
 
+global_current = 617
+global_line = [615, 616]
+
 # Return current people in line
 def line
-  if (!people.empty?)
+  if (!global_line.empty?)
     line_number = 1
     people_line = "The line is currently:" 
-    people.each do |person|
+    global_line.each do |person|
       people_line.concat " #{line_number}. #{person}"
       line_number += 1
     end
