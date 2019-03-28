@@ -38,7 +38,7 @@ def now_serving(people)
 end
 
 def my_method 
-  'potatoes'
+  return 'potatoes'
   'umbrella'
 end 
 
