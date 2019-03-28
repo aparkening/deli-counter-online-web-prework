@@ -2,7 +2,7 @@ require 'pry'
 katz_deli = [ ]
 
 # Return current people in line
-def line(people)
+def line
   if (!people.empty?)
     line_number = 1
     people_line = "The line is currently:" 
@@ -18,7 +18,7 @@ def line(people)
 end 
 
 # Add new person to people in line
-def take_a_number(people, name)
+def take_a_number
   people << name
   place = people.index(name) + 1
   place_in_line = "Welcome, #{name}. You are number #{place} in line."
@@ -27,7 +27,7 @@ def take_a_number(people, name)
 end
 
 # Puts name person being served remove them from the front of the line
-def now_serving(people)
+def now_serving
   if (!people.empty?)
     puts "Currently serving #{people.first}."
     people.shift
@@ -37,10 +37,6 @@ def now_serving(people)
   return people
 end
 
-def my_method 
-  'potatoes'
-  puts 'umbrella'
-end 
 
 binding.pry
 
