@@ -1,6 +1,14 @@
 require 'pry'
 katz_deli = [ ]
 
+# no mare arguments
+# now, let's not keep track of names
+# instead, each customer gets a number 
+# we should still have the same functionality
+# except we should announce people by their number 
+# the first number is 617 
+# the current (starting) line should be [615, 616]
+
 # Return current people in line
 def line
   if (!people.empty?)
