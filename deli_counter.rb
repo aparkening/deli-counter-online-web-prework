@@ -30,9 +30,9 @@ end
 
 # Add new person to people in line
 def take_a_number
-  $global_line << name
-  place = $global_line.index(name) + 1
-  place_in_line = "Welcome, #{name}. You are number #{place} in line."
+  $global_line << $global_current
+  place = $global_line.index($global_current) + 1
+  place_in_line = "Welcome, #{$global_current}. You are number #{place} in line."
   puts place_in_line
   return $global_line
 end
