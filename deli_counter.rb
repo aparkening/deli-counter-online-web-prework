@@ -31,10 +31,9 @@ end
 # Add new person to people in line
 def take_a_number
   $global_line << $global_current
-  place = $global_line.index($global_current) + 1
+  place = $global_line.size
   place_in_line = "Welcome, #{$global_current}. You are number #{place} in line."
-  puts place_in_line
-  return $global_line
+  puts $global_line
 end
 
 # Puts name person being served remove them from the front of the line
