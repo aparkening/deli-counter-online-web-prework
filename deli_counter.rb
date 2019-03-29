@@ -9,8 +9,8 @@ katz_deli = [ ]
 # the first number is 617 
 # the current (starting) line should be [615, 616]
 
-global_current = 617
-global_line = [615, 616]
+$global_current = 617
+$global_line = [615, 616]
 
 # Return current people in line
 def line
